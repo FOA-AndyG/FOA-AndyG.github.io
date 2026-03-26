@@ -1,548 +1,544 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <title>Furniture Pros Logistics Solution</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="images/fpl_logo1.png" rel="icon">
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-    <div class="site-wrap">
-
-        <div class="site-mobile-menu">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-            </div>
-            <div class="site-mobile-menu-body"></div>
+  <head>
+    <title>FPL – Furniture Pros Logistics Solution</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/fpl_new_logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/new_style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+    <nav id="main-nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#"
+          ><img src="images/fpl_new_logo.png" alt="FPL Logo"
+        /></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#crating">Custom Crating</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-cta">Get a Free Quote</a>
         </div>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#crating" onclick="toggleMenu()">Custom Crating</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <a
+          href="#contact"
+          onclick="toggleMenu()"
+          style="color: var(--orange2); font-weight: 700"
+          >Get a Free Quote →</a
+        >
+      </div>
+    </nav>
 
-        <header class="site-navbar py-3" role="banner">
+    <!-- ============================================================
+     HERO
+     ============================================================ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span></span> Walnut &amp; City of Industry, CA
+        </div>
+        <h1>Full-Service<br /><em>Logistics</em><br />Solutions</h1>
+        <p>
+          Custom crating · Ocean freight · Ground shipping · Strategic
+          warehousing — all under one roof. Serving businesses coast to coast
+          from LA to New York.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Get a Free Audit →</a>
+          <a href="#services" class="btn-outline">Our Services</a>
+        </div>
+      </div>
+    </section>
 
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-11 col-xl-2">
-                        <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">
-                                <img width="400" height="90" src="images/fpl_logo2.png">
-                            </a></h1>
-                    </div>
-                    <div class="col-12 col-md-10 d-none d-xl-block">
-                        <nav class="site-navigation position-relative text-right" role="navigation">
-
-                            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <!-- <li><a href="about.html">About Us</a></li> -->
-                                <li class="has-children">
-                                    <a href="index.html">Services</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Air Freight</a></li>
-                                        <li><a href="#">Ocean Freight</a></li>
-                                        <li><a href="#">Ground Shipping</a></li>
-                                        <li><a href="#">Warehousing</a></li>
-                                        <li><a href="#">Storage</a></li>
-                                    </ul>
-                                </li>
-                                <!-- <li><a href="industries.html">Industries</a></li>
-                                <li><a href="blog.html">Blog</a></li> -->
-                                <!-- <li><a href="contact.html">Contact</a></li> -->
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a
-                            href="#" class="site-menu-toggle js-menu-toggle text-white"><span
-                                class="icon-menu h3"></span></a></div>
-
-                </div>
-            </div>
-
-        </header>
+    <!-- ============================================================
+     STATS STRIP
+     ============================================================ -->
+    <div class="stats-strip">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-num">40–70%</div>
+          <div class="stat-label">FedEx &amp; UPS Savings</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">&lt;3 Days</div>
+          <div class="stat-label">LTL Guaranteed Lead Time</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Monitored Warehouse</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">ISPM-15</div>
+          <div class="stat-label">Certified Custom Crating</div>
+        </div>
+      </div>
     </div>
 
-
-
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade"
-        data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-
-                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">Furniture Pros
-                        Logistics Solution</h1>
-                    <!-- <h4 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">Worldwide Freight Services</h4> -->
-                </div>
+    <!-- ============================================================
+     ABOUT
+     ============================================================ -->
+    <section class="about" id="about">
+      <div class="section-inner">
+        <div class="about-grid">
+          <div class="about-img">
+            <img src="images/img_5.jpg" alt="FPL Warehouse" />
+            <div class="about-accent"></div>
+          </div>
+          <div>
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title">One Partner.<br />All Your Freight.</h2>
+            <p class="section-sub">
+              Furniture Pros Logistics Solution is a rapidly growing
+              full-service logistics company based in Walnut, CA — right off the
+              60/57 freeways. We digitize freight forwarding, making it more
+              accurate and agile for businesses of every size.
+            </p>
+            <div class="about-checkmarks">
+              <div class="check-item">
+                <div class="check-icon">✓</div>
+                <span
+                  >Asset-based: we handle your goods in
+                  <strong>our own facility</strong> — photos &amp; tracking
+                  updates on every shipment</span
+                >
+              </div>
+              <div class="check-item">
+                <div class="check-icon">✓</div>
+                <span
+                  ><strong>No bloated 3PL contracts</strong> — pay only for the
+                  space and services you use</span
+                >
+              </div>
+              <div class="check-item">
+                <div class="check-icon">✓</div>
+                <span
+                  >Stop by anytime to inspect your cargo — we're
+                  <strong>local, accessible, and transparent</strong></span
+                >
+              </div>
+              <div class="check-item">
+                <div class="check-icon">✓</div>
+                <span
+                  >Consultative approach: we
+                  <strong>engineer shipping solutions</strong> that minimize
+                  damage claims and maximize your bottom line</span
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SERVICES
+     ============================================================ -->
+    <section class="services" id="services">
+      <div class="section-inner">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">End-to-End<br />Logistics Services</h2>
+        <p class="section-sub">
+          From the moment your goods leave the factory floor to final-mile
+          delivery — we cover every step.
+        </p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🏭</div>
+            <h3>Strategic Warehousing</h3>
+            <p>
+              Secure, clean, organized storage in Walnut (91789). Competitive
+              rates for short-term and long-term storage. Inspection and minor
+              repair services keep your assets show-ready.
+            </p>
+            <div class="service-tags">
+              <span class="tag">24/7 Security</span>
+              <span class="tag">FBA Prep</span>
+              <span class="tag">Trans-loading</span>
+            </div>
+          </div>
+
+          <div class="service-card orange">
+            <div class="service-icon">🚢</div>
+            <h3>Ocean Freight</h3>
+            <p>
+              Stable and competitive ocean rates with door-to-door cargo
+              insurance. We protect your supplier cargo while it's in transit on
+              the ocean.
+            </p>
+            <div class="service-tags">
+              <span class="tag orange-tag">Cargo Insurance</span>
+              <span class="tag orange-tag">Competitive Rates</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🚛</div>
+            <h3>Ground Shipping</h3>
+            <p>
+              Pick-Pack-Ship (online &amp; offline), reverse logistics, and
+              guaranteed lead times. Small parcel under 1 day; LTL under 3 days.
+              We compare XPO, Estes, TForce, Old Dominion for the best rate.
+            </p>
+            <div class="service-tags">
+              <span class="tag">LTL &lt;3 Days</span>
+              <span class="tag">Parcel &lt;1 Day</span>
+              <span class="tag">Returns</span>
+            </div>
+          </div>
+
+          <div class="service-card orange">
+            <div class="service-icon">📦</div>
+            <h3>Expert Custom Crating</h3>
+            <p>
+              ISPM-15 certified, heat-treated crates for export. Precision
+              blocking, bracing, and cushioning for sensitive electronics,
+              engines, and luxury furniture. Optional vapor barrier packaging.
+            </p>
+            <div class="service-tags">
+              <span class="tag orange-tag">ISPM-15</span>
+              <span class="tag orange-tag">Export Ready</span>
+              <span class="tag orange-tag">Vapor Barrier</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Data Reporting</h3>
+            <p>
+              Full Warehouse Management System to manage all your inventory
+              data, shipment tracking, and logistics reporting — all in one
+              place.
+            </p>
+            <div class="service-tags">
+              <span class="tag">WMS Platform</span>
+              <span class="tag">Real-Time Data</span>
+            </div>
+          </div>
+
+          <div class="service-card orange">
+            <div class="service-icon">🚐</div>
+            <h3>Final-Mile Delivery</h3>
+            <p>
+              Dedicated delivery van service for last-mile delivery, ensuring
+              your freight reaches its final destination quickly and
+              professionally.
+            </p>
+            <div class="service-tags">
+              <span class="tag orange-tag">Local Delivery</span>
+              <span class="tag orange-tag">Final Mile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     WHY US
+     ============================================================ -->
+    <section class="why">
+      <div class="section-inner">
+        <span class="section-tag why-tag">Why FPL</span>
+        <h2 class="section-title">
+          The Advantages<br />You Won't Find Elsewhere
+        </h2>
+        <p class="section-sub why-sub">
+          Tired of juggling multiple vendors? We bridge the gap with a seamless,
+          integrated logistics experience right in your backyard.
+        </p>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-num">01</div>
+            <h3>Tier-1 Freight Discounts</h3>
+            <p>
+              Leverage our massive shipping volume to save 40–70% on FedEx and
+              UPS international express. We compare top LTL carriers in seconds
+              to find you the best rate.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-num">02</div>
+            <h3>Local &amp; Asset-Based</h3>
+            <p>
+              Our warehouse is located right off the 60/57 freeways in Walnut.
+              Stop by anytime — we handle your goods in our own facility with
+              photos and tracking updates on every shipment.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-num">03</div>
+            <h3>No Big 3PL Bloat</h3>
+            <p>
+              Flexible, agile storage rates with no bloated contracts. Pay only
+              for what you use. Short-term or long-term — your terms, your
+              budget.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-num">04</div>
+            <h3>Engineering-First Approach</h3>
+            <p>
+              We don't just ship boxes — we engineer shipping solutions designed
+              to minimize damage claims, reduce costs, and maximize your bottom
+              line.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SAVINGS CTA BANNER
+     ============================================================ -->
+    <div class="savings-cta">
+      <div class="savings-inner">
+        <div class="savings-text">
+          <h2>💰 Get a Free<br />Logistics Audit</h2>
+          <p>
+            Show us your most recent freight invoice, and we'll show you exactly
+            how much you can save. No obligation, no commitment — just savings.
+          </p>
+          <a href="#contact" class="btn-white">Claim Your Free Audit →</a>
+        </div>
+        <div class="savings-badge">
+          <div class="savings-pct">40–70%</div>
+          <div class="savings-pct-label">
+            Potential Savings on<br />International Express
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row align-items-center no-gutters align-items-stretch overlap-section">
-            <div class="col-md-4">
-                <div class="feature-1 pricing h-100 text-center">
-                    <div class="icon">
-                        <span class="icon-dollar"></span>
-                    </div>
-                    <h2 class="my-4 heading">Best Prices</h2>
-                    <p>Furniture Pros Logistics Solution (FPL) is a rapidly growing full-service logistics company with
-                        a global presence and service across USA from LA to New York.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="free-quote bg-dark h-100 text-center">
-                    <div class="icon">
-                        <span class="icon-phone"></span>
-                    </div>
-                    <h2 class="my-4 heading">Contact Us</h2>
-                    <p>626-387-3339</p>
-                    <p>Sales@fplsolution.com</p>
-                    <p>20632 Currier Rd Walnut, CA 91789, USA</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-3 pricing h-100 text-center">
-                    <div class="icon">
-                        <span class="flaticon-travel"></span>
-                    </div>
-                    <h2 class="my-4 heading">Efficiently, from Point A to B</h2>
-                    <p>Our goal is to produce cost efficient, perfect orders, at scale through equipping our customers
-                        with the services and tools they need to ship any items in the most efficient manner.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="site-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center border-primary">
-                    <h2 class="font-weight-light text-primary">WHAT WE OFFER</h2>
-                    <p class="color-black-opacity-5">We Offer The Following Services</p>
-                </div>
-            </div>
-            <div class="row align-items-stretch">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
-                        <div>
-                            <h3>Forward Positioning</h3>
-                            <p>Reliable Container & Drayage Capacity</p>
-                            <!-- <p><a href="#">Learn More</a></p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span
-                                class="text-primary flaticon-sea-ship-with-containers"></span></div>
-                        <div>
-                            <h3>Ocean Freight</h3>
-                            <p>Stable & Attractive Ocean Rate</p>
-                            <p>Cargo Insurance (Protect supplier cargo door-to-door when it is in transit on ocean)</p>
-                            <!-- <p><a href="#">Learn More</a></p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-                        <div>
-                            <h3>Ground Shipping</h3>
-                            <p>Pick- Pack-Ship (Both on-line & off-line)</p>
-                            <p>Reverse logistic (Return & Inspection)</p>
-                            <p>Guaranteed lead times (Less than 1 day for Small Parcel; less than 3 days for LTL)</p>
-                            <!-- <p><a href="#">Learn More</a></p> -->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-barn"></span></div>
-                        <div>
-                            <h3>Warehousing</h3>
-                            <p>Attractive Storage Rate</p>
-                            <p>In-house Brokerage (Brokerage service to streamline import customs clearance process)</p>
-                            <!-- <p><a href="#">Learn More</a></p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-platform"></span></div>
-                        <div>
-                            <h3>Data Reporting</h3>
-                            <p>Warehouse Management System to manage all data</p>
-                            <!-- <p><a href="#">Learn More</a></p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-car"></span></div>
-                        <div>
-                            <h3>Delivery Van</h3>
-                            <p>Final miles delivery</p>
-                            <!-- <p><a href="#">Learn More</a></p> -->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="site-section block-13">
-        <!-- <div class="container"></div> -->
-
-
-        <div class="owl-carousel nonloop-block-13">
-            <div>
-                <a href="#" class="unit-1 text-center">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                    <div class="unit-1-text">
-                        <h3 class="unit-1-heading">Storage</h3>
-                        <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus
-                            voluptate libero.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div>
-                <a href="#" class="unit-1 text-center">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                    <div class="unit-1-text">
-                        <h3 class="unit-1-heading">Air Transports</h3>
-                        <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus
-                            voluptate libero.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div>
-                <a href="#" class="unit-1 text-center">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                    <div class="unit-1-text">
-                        <h3 class="unit-1-heading">Cargo Transports</h3>
-                        <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus
-                            voluptate libero.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div>
-                <a href="#" class="unit-1 text-center">
-                    <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-                    <div class="unit-1-text">
-                        <h3 class="unit-1-heading">Cargo Ship</h3>
-                        <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus
-                            voluptate libero.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div>
-                <a href="#" class="unit-1 text-center">
-                    <img src="images/img_5.jpg" alt="Image" class="img-fluid">
-                    <div class="unit-1-text">
-                        <h3 class="unit-1-heading">Ware Housing</h3>
-                        <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus
-                            voluptate libero.</p>
-                    </div>
-                </a>
-            </div>
-
-
-        </div>
-    </div>
-
-
-
-
-    <div class="site-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center border-primary">
-                    <h2 class="font-weight-light text-primary">Furniture Pros Logistics Solution</h2>
-                    <h5 class="color-black-opacity-5">A rapidly growing full-service logistics company with a global
-                        presence and service across USA from LA to New York.</h5>
-                    <h5 class="color-black-opacity-5">FPL is at the forefront of digitizing freight forwarding, making
-                        it more accurate and agile.</h5>
-                </div>
-            </div>
-
-            <!-- <div class="row align-items-stretch">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-travel"></span></div>
-                        <div>
-                            <h3>Air Air Freight</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span
-                                class="text-primary flaticon-sea-ship-with-containers"></span></div>
-                        <div>
-                            <h3>Ocean Freight</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="unit-4 d-flex">
-                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-frontal-truck"></span></div>
-                        <div>
-                            <h3>Ground Shipping</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae
-                                eligendi at.</p>
-                            <p><a href="#">Learn More</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-        </div>
-    </div>
-
-    <div class="site-blocks-cover overlay inner-page-cover"
-        style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-
-                <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#"
-                        class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
-                    <h2 class="text-white font-weight-light mb-5 h1">View Our Services Below</h2>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="site-section border-bottom">
-        <div class="container">
-
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center border-primary">
-                    <h2 class="font-weight-light text-primary">Testimonials</h2>
-                </div>
-            </div>
-
-            <div class="slide-one-item home-slider owl-carousel">
+    <!-- ============================================================
+     CUSTOM CRATING HIGHLIGHT
+     ============================================================ -->
+    <section class="crating" id="crating">
+      <div class="section-inner">
+        <div class="crating-grid">
+          <div>
+            <span class="section-tag">Custom Crating</span>
+            <h2 class="section-title">
+              Your Cargo is Unique.<br />Your Crating Should Be Too.
+            </h2>
+            <p class="section-sub">
+              We design ISPM-15 certified crates for maximum protection, global
+              customs compliance, and peace of mind — for everything from
+              high-performance engines to luxury furniture.
+            </p>
+            <div class="crating-list">
+              <div class="crating-item">
+                <div class="crating-icon-wrap">🌍</div>
                 <div>
-                    <div class="testimonial">
-                        <figure class="mb-4">
-                            <img src="images/person_3.jpg" alt="Image" class="img-fluid mb-3">
-                            <p>John Smith</p>
-                        </figure>
-                        <blockquote>
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                        </blockquote>
-                    </div>
+                  <h4>ISPM-15 Certified &amp; Export Ready</h4>
+                  <p>
+                    Heavy-duty, heat-treated (HT) wood crates compliant with
+                    international standards. Global customs clearance
+                    guaranteed.
+                  </p>
                 </div>
+              </div>
+              <div class="crating-item">
+                <div class="crating-icon-wrap">🔧</div>
                 <div>
-                    <div class="testimonial">
-                        <figure class="mb-4">
-                            <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3">
-                            <p>Christine Aguilar</p>
-                        </figure>
-                        <blockquote>
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                        </blockquote>
-                    </div>
+                  <h4>Precision Protection</h4>
+                  <p>
+                    Specialized internal blocking, bracing, and cushioning for
+                    sensitive electronics, high-performance engines, and luxury
+                    furniture.
+                  </p>
                 </div>
-
+              </div>
+              <div class="crating-item">
+                <div class="crating-icon-wrap">💧</div>
                 <div>
-                    <div class="testimonial">
-                        <figure class="mb-4">
-                            <img src="images/person_4.jpg" alt="Image" class="img-fluid mb-3">
-                            <p>Robert Spears</p>
-                        </figure>
-                        <blockquote>
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                        </blockquote>
-                    </div>
+                  <h4>Vapor Barrier Packaging</h4>
+                  <p>
+                    Optional vacuum sealing to prevent corrosion during ocean
+                    freight. Essential for long-haul international shipments.
+                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="crating-img">
+            <img src="images/img_4.jpg" alt="Custom Crating" />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ============================================================
+     CONTACT
+     ============================================================ -->
+    <section class="contact" id="contact">
+      <div class="section-inner">
+        <div class="contact-grid">
+          <div>
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Let's Talk<br />About Your Freight</h2>
+            <p class="section-sub contact-sub">
+              Ready to reduce costs, improve reliability, or get a free
+              logistics audit? Reach out — our team responds fast.
+            </p>
+            <div class="contact-info">
+              <div class="contact-block">
+                <div class="contact-icon">📞</div>
                 <div>
-                    <div class="testimonial">
-                        <figure class="mb-4">
-                            <img src="images/person_5.jpg" alt="Image" class="img-fluid mb-3">
-                            <p>Bruce Rogers</p>
-                        </figure>
-                        <blockquote>
-                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-                        </blockquote>
-                    </div>
+                  <strong>Call</strong>
+                  <a href="tel:6263873339">626-387-3339</a>
                 </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:Sales@fplsolution.com"
+                    >Sales@fplsolution.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <strong>Warehouse Location</strong>
+                  <span
+                    >20632 Currier Rd, Walnut, CA 91789<br />Near Valley Blvd
+                    &amp; Fairway Dr · Off 60/57 Freeways</span
+                  >
+                </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-icon">🌐</div>
+                <div>
+                  <strong>WMS Portal</strong>
+                  <a
+                    href="http://wms.furnitureproslogistics.com"
+                    target="_blank"
+                    >wms.furnitureproslogistics.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <form action="https://formspree.io/f/mzdkbrdg" method="POST">
+            <div class="contact-form-card">
+              <h3>Request a Free Quote</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" name="first_name" placeholder="John" />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" name="last_name" placeholder="Smith" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john@company.com"
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" name="phone" placeholder="(626) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label>Service Needed</label>
+                <select name="service">
+                  <option value="">Select a service…</option>
+                  <option value="Custom Crating">Custom Crating</option>
+                  <option value="Ocean Freight">Ocean Freight</option>
+                  <option value="Ground Shipping / LTL">
+                    Ground Shipping / LTL
+                  </option>
+                  <option value="Strategic Warehousing">
+                    Strategic Warehousing
+                  </option>
+                  <option value="Final-Mile Delivery">
+                    Final-Mile Delivery
+                  </option>
+                  <option value="Free Logistics Audit">
+                    Free Logistics Audit
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Tell us about your shipment</label>
+                <textarea
+                  placeholder="Dimensions, weight, origin, destination, timeline…"
+                  name="shipment_details"
+                ></textarea>
+              </div>
+              <button class="form-submit" type="submit">Send Request →</button>
             </div>
+          </form>
         </div>
-    </div> -->
+      </div>
+    </section>
 
-    <!-- <div class="site-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center border-primary">
-                    <h2 class="font-weight-light text-primary">Our Blog</h2>
-                    <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
-                </div>
-            </div>
-            <div class="row mb-3 align-items-stretch">
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-                    <div class="h-entry">
-                        <img src="images/blog_1.jpg" alt="Image" class="img-fluid">
-                        <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-                        <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2024 at
-                            2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
-                            sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
-                    <div class="h-entry">
-                        <img src="images/blog_2.jpg" alt="Image" class="img-fluid">
-                        <h2 class="font-size-regular"><a href="#">Warehousing Your Packages</a></h2>
-                        <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2024 at
-                            2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
-                            sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="site-section border-top">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h2 class="mb-5 text-black">Our Warehouse Management System</h2>
-                    <p class="mb-0"><a href="http://wms.furnitureproslogistics.com" target="_blank"
-                            class="btn btn-primary py-3 px-5 text-white">Get Started</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+    <!-- ============================================================
+     WMS CTA
+     ============================================================ -->
+    <div class="wms-cta">
+      <h2>Manage Your Inventory Online</h2>
+      <p>
+        Access our Warehouse Management System to track inventory, shipments,
+        and reporting in real time.
+      </p>
+      <a
+        href="http://wms.furnitureproslogistics.com"
+        target="_blank"
+        class="btn-primary"
+        >Access WMS Portal →</a
+      >
     </div>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row">
-                        <!-- <div class="col-md-3">
-                            <h2 class="footer-heading mb-4">Quick Links</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div> -->
-                        <!-- <div class="col-md-3">
-                            <h2 class="footer-heading mb-4">Products</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div> -->
-                        <div class="col-md-6 text-center">
-                            <img width="400" height="90" src="images/fpl_logo2.png" alt="Furniture Pros Logistics Logo">
-                            <p class="footer-text">A modernized approach to all your shipping and logistical needs</p>
-                        </div>
-
-                        <!-- <div class="col-md-3">
-                            <h2 class="footer-heading mb-4">Follow Us</h2>
-                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h2 class="footer-heading mb-4">Contact Info</h2>
-                    <ul class="list-unstyled" style="color: aliceblue;">
-                        <li>626-387-3339</li>
-                        <li>Sales@fplsolution.com</li>
-                        <li>20632 Currier Rd Walnut, CA 91789, USA</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                    <div class="border-top pt-5">
-                        <p>
-                            Copyright © 2026 Furniture Pros Logistics Solution
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="images/fpl_logo2.png" alt="FPL" />
         </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#crating">Crating</a>
+          <a href="#contact">Contact</a>
+          <a href="http://wms.furnitureproslogistics.com" target="_blank"
+            >WMS</a
+          >
+        </div>
+        <div class="footer-copy">
+          © 2026 Furniture Pros Logistics Solution · Walnut, CA
+        </div>
+      </div>
     </footer>
-    </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/aos.js"></script>
-
-    <script src="js/main.js"></script>
-
-</body>
-
+    <!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+    <script src="js/new_main.js"></script>
+  </body>
 </html>
