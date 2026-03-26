@@ -4,6 +4,10 @@
     <title>FPL – Furniture Pros Logistics Solution</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Full-service logistics in Walnut, CA — custom crating, ocean freight, ground shipping, and warehousing from LA to New York. Get a free logistics audit today."
+    />
     <link rel="icon" href="images/fpl_new_logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
@@ -13,13 +17,14 @@
   </head>
   <body>
     <!-- ============================================================
-     NAVIGATION
-     ============================================================ -->
+         NAVIGATION
+         ============================================================ -->
     <nav id="main-nav">
       <div class="nav-inner">
-        <a class="nav-logo" href="#"
-          ><img src="images/fpl_new_logo.png" alt="FPL Logo"
-        /></a>
+        <a class="nav-logo" href="#home">
+          <img src="images/fpl_new_logo.png" alt="FPL Logo" />
+        </a>
+
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#services">Services</a>
@@ -27,30 +32,45 @@
           <a href="#contact">Contact</a>
           <a href="#contact" class="nav-cta">Get a Free Quote</a>
         </div>
-        <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+
+        <!--
+          Changed from <div> to <button> for keyboard accessibility.
+          aria-label describes the action; aria-expanded is toggled by JS.
+        -->
+        <button
+          class="nav-hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          onclick="toggleMenu(this)"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
+
       <div class="mobile-menu" id="mobile-menu">
         <a href="#about" onclick="toggleMenu()">About</a>
         <a href="#services" onclick="toggleMenu()">Services</a>
         <a href="#crating" onclick="toggleMenu()">Custom Crating</a>
         <a href="#contact" onclick="toggleMenu()">Contact</a>
-        <a
-          href="#contact"
-          onclick="toggleMenu()"
-          style="color: var(--orange2); font-weight: 700"
+        <a href="#contact" onclick="toggleMenu()" class="mobile-menu-cta"
           >Get a Free Quote →</a
         >
       </div>
     </nav>
 
     <!-- ============================================================
-     HERO
-     ============================================================ -->
-    <section class="hero" id="home">
+         HERO
+         Background image is set here so it can be changed in one place.
+         The ::before overlay in CSS sits on top to darken it.
+         ============================================================ -->
+    <section
+      class="hero"
+      id="home"
+      style="background-image: url(&quot;images/bg2.jpg&quot;)"
+    >
       <div class="hero-inner">
         <div class="hero-badge">
           <span></span> Walnut &amp; City of Industry, CA
@@ -69,8 +89,8 @@
     </section>
 
     <!-- ============================================================
-     STATS STRIP
-     ============================================================ -->
+         STATS STRIP
+         ============================================================ -->
     <div class="stats-strip">
       <div class="stats-inner">
         <div class="stat-item">
@@ -93,13 +113,40 @@
     </div>
 
     <!-- ============================================================
-     ABOUT
-     ============================================================ -->
+         TRUST STRIP
+         ============================================================ -->
+    <div class="trust-strip">
+      <div class="section-inner">
+        <p>Integrating with top carriers & trusted by growing brands</p>
+        <div class="trust-logos">
+          <img src="images/logos/fedex-ar21.svg" alt="FedEx" loading="lazy" />
+          <img src="images/logos/ups-ar21.svg" alt="UPS" loading="lazy" />
+          <img
+            src="images/logos/amazon-ar21.svg"
+            alt="Amazon FBA"
+            loading="lazy"
+          />
+          <img
+            src="images/logos/estes-logo.svg"
+            alt="Estes Express Lines"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
     <section class="about" id="about">
       <div class="section-inner">
         <div class="about-grid">
           <div class="about-img">
-            <img src="images/img_5.jpg" alt="FPL Warehouse" />
+            <img
+              src="images/bg1.jpg"
+              alt="Inside the FPL warehouse in Walnut, CA"
+              loading="lazy"
+            />
             <div class="about-accent"></div>
           </div>
           <div>
@@ -113,34 +160,34 @@
             </p>
             <div class="about-checkmarks">
               <div class="check-item">
-                <div class="check-icon">✓</div>
-                <span
-                  >Asset-based: we handle your goods in
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>
+                  Asset-based: we handle your goods in
                   <strong>our own facility</strong> — photos &amp; tracking
-                  updates on every shipment</span
-                >
+                  updates on every shipment
+                </span>
               </div>
               <div class="check-item">
-                <div class="check-icon">✓</div>
-                <span
-                  ><strong>No bloated 3PL contracts</strong> — pay only for the
-                  space and services you use</span
-                >
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>
+                  <strong>No bloated 3PL contracts</strong> — pay only for the
+                  space and services you use
+                </span>
               </div>
               <div class="check-item">
-                <div class="check-icon">✓</div>
-                <span
-                  >Stop by anytime to inspect your cargo — we're
-                  <strong>local, accessible, and transparent</strong></span
-                >
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>
+                  Stop by anytime to inspect your cargo — we're
+                  <strong>local, accessible, and transparent</strong>
+                </span>
               </div>
               <div class="check-item">
-                <div class="check-icon">✓</div>
-                <span
-                  >Consultative approach: we
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>
+                  Consultative approach: we
                   <strong>engineer shipping solutions</strong> that minimize
-                  damage claims and maximize your bottom line</span
-                >
+                  damage claims and maximize your bottom line
+                </span>
               </div>
             </div>
           </div>
@@ -149,8 +196,8 @@
     </section>
 
     <!-- ============================================================
-     SERVICES
-     ============================================================ -->
+         SERVICES
+         ============================================================ -->
     <section class="services" id="services">
       <div class="section-inner">
         <span class="section-tag">What We Offer</span>
@@ -159,9 +206,10 @@
           From the moment your goods leave the factory floor to final-mile
           delivery — we cover every step.
         </p>
+
         <div class="services-grid">
           <div class="service-card">
-            <div class="service-icon">🏭</div>
+            <div class="service-icon" aria-hidden="true">🏭</div>
             <h3>Strategic Warehousing</h3>
             <p>
               Secure, clean, organized storage in Walnut (91789). Competitive
@@ -176,7 +224,7 @@
           </div>
 
           <div class="service-card orange">
-            <div class="service-icon">🚢</div>
+            <div class="service-icon" aria-hidden="true">🚢</div>
             <h3>Ocean Freight</h3>
             <p>
               Stable and competitive ocean rates with door-to-door cargo
@@ -190,7 +238,7 @@
           </div>
 
           <div class="service-card">
-            <div class="service-icon">🚛</div>
+            <div class="service-icon" aria-hidden="true">🚛</div>
             <h3>Ground Shipping</h3>
             <p>
               Pick-Pack-Ship (online &amp; offline), reverse logistics, and
@@ -205,7 +253,7 @@
           </div>
 
           <div class="service-card orange">
-            <div class="service-icon">📦</div>
+            <div class="service-icon" aria-hidden="true">📦</div>
             <h3>Expert Custom Crating</h3>
             <p>
               ISPM-15 certified, heat-treated crates for export. Precision
@@ -220,7 +268,7 @@
           </div>
 
           <div class="service-card">
-            <div class="service-icon">📊</div>
+            <div class="service-icon" aria-hidden="true">📊</div>
             <h3>Data Reporting</h3>
             <p>
               Full Warehouse Management System to manage all your inventory
@@ -234,7 +282,7 @@
           </div>
 
           <div class="service-card orange">
-            <div class="service-icon">🚐</div>
+            <div class="service-icon" aria-hidden="true">🚐</div>
             <h3>Final-Mile Delivery</h3>
             <p>
               Dedicated delivery van service for last-mile delivery, ensuring
@@ -251,15 +299,15 @@
     </section>
 
     <!-- ============================================================
-     WHY US
-     ============================================================ -->
+         WHY US
+         ============================================================ -->
     <section class="why">
       <div class="section-inner">
-        <span class="section-tag why-tag">Why FPL</span>
+        <span class="section-tag">Why FPL</span>
         <h2 class="section-title">
           The Advantages<br />You Won't Find Elsewhere
         </h2>
-        <p class="section-sub why-sub">
+        <p class="section-sub">
           Tired of juggling multiple vendors? We bridge the gap with a seamless,
           integrated logistics experience right in your backyard.
         </p>
@@ -305,8 +353,8 @@
     </section>
 
     <!-- ============================================================
-     SAVINGS CTA BANNER
-     ============================================================ -->
+         SAVINGS CTA BANNER
+         ============================================================ -->
     <div class="savings-cta">
       <div class="savings-inner">
         <div class="savings-text">
@@ -327,8 +375,8 @@
     </div>
 
     <!-- ============================================================
-     CUSTOM CRATING HIGHLIGHT
-     ============================================================ -->
+         CUSTOM CRATING HIGHLIGHT
+         ============================================================ -->
     <section class="crating" id="crating">
       <div class="section-inner">
         <div class="crating-grid">
@@ -344,7 +392,7 @@
             </p>
             <div class="crating-list">
               <div class="crating-item">
-                <div class="crating-icon-wrap">🌍</div>
+                <div class="crating-icon-wrap" aria-hidden="true">🌍</div>
                 <div>
                   <h4>ISPM-15 Certified &amp; Export Ready</h4>
                   <p>
@@ -355,7 +403,7 @@
                 </div>
               </div>
               <div class="crating-item">
-                <div class="crating-icon-wrap">🔧</div>
+                <div class="crating-icon-wrap" aria-hidden="true">🔧</div>
                 <div>
                   <h4>Precision Protection</h4>
                   <p>
@@ -366,7 +414,7 @@
                 </div>
               </div>
               <div class="crating-item">
-                <div class="crating-icon-wrap">💧</div>
+                <div class="crating-icon-wrap" aria-hidden="true">💧</div>
                 <div>
                   <h4>Vapor Barrier Packaging</h4>
                   <p>
@@ -378,18 +426,23 @@
             </div>
           </div>
           <div class="crating-img">
-            <img src="images/img_4.jpg" alt="Custom Crating" />
+            <img
+              src="images/Crating/20260323_170822.jpg"
+              alt="FPL custom wood crate being assembled"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-     CONTACT
-     ============================================================ -->
+         CONTACT
+         ============================================================ -->
     <section class="contact" id="contact">
       <div class="section-inner">
         <div class="contact-grid">
+          <!-- Left column: contact info -->
           <div>
             <span class="section-tag">Get In Touch</span>
             <h2 class="section-title">Let's Talk<br />About Your Freight</h2>
@@ -399,14 +452,14 @@
             </p>
             <div class="contact-info">
               <div class="contact-block">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon" aria-hidden="true">📞</div>
                 <div>
-                  <strong>Call</strong>
+                  <strong>Call or Text</strong>
                   <a href="tel:6263873339">626-387-3339</a>
                 </div>
               </div>
               <div class="contact-block">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon" aria-hidden="true">✉️</div>
                 <div>
                   <strong>Email</strong>
                   <a href="mailto:Sales@fplsolution.com"
@@ -415,22 +468,23 @@
                 </div>
               </div>
               <div class="contact-block">
-                <div class="contact-icon">📍</div>
+                <div class="contact-icon" aria-hidden="true">📍</div>
                 <div>
                   <strong>Warehouse Location</strong>
-                  <span
-                    >20632 Currier Rd, Walnut, CA 91789<br />Near Valley Blvd
-                    &amp; Fairway Dr · Off 60/57 Freeways</span
-                  >
+                  <span>
+                    20632 Currier Rd, Walnut, CA 91789<br />
+                    Near Valley Blvd &amp; Fairway Dr · Off 60/57 Freeways
+                  </span>
                 </div>
               </div>
               <div class="contact-block">
-                <div class="contact-icon">🌐</div>
+                <div class="contact-icon" aria-hidden="true">🌐</div>
                 <div>
                   <strong>WMS Portal</strong>
                   <a
                     href="http://wms.furnitureproslogistics.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >wms.furnitureproslogistics.com</a
                   >
                 </div>
@@ -438,34 +492,63 @@
             </div>
           </div>
 
-          <form action="https://formspree.io/f/mzdkbrdg" method="POST">
-            <div class="contact-form-card">
-              <h3>Request a Free Quote</h3>
+          <!-- Right column: quote form -->
+          <!--
+            Form is now INSIDE .contact-form-card so the card style
+            wraps the entire form including the submit button.
+          -->
+          <div class="contact-form-card">
+            <h3>Request a Free Quote</h3>
+            <form action="https://formspree.io/f/mzdkbrdg" method="POST">
               <div class="form-row">
                 <div class="form-group">
-                  <label>First Name</label>
-                  <input type="text" name="first_name" placeholder="John" />
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="John"
+                    autocomplete="given-name"
+                    required
+                  />
                 </div>
                 <div class="form-group">
-                  <label>Last Name</label>
-                  <input type="text" name="last_name" placeholder="Smith" />
+                  <label for="last_name">Last Name</label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder="Smith"
+                    autocomplete="family-name"
+                    required
+                  />
                 </div>
               </div>
               <div class="form-group">
-                <label>Email Address</label>
+                <label for="email">Email Address</label>
                 <input
                   type="email"
+                  id="email"
                   name="email"
                   placeholder="john@company.com"
+                  autocomplete="email"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" name="phone" placeholder="(626) 000-0000" />
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(626) 000-0000"
+                  autocomplete="tel"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label>Service Needed</label>
-                <select name="service">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
                   <option value="">Select a service…</option>
                   <option value="Custom Crating">Custom Crating</option>
                   <option value="Ocean Freight">Ocean Freight</option>
@@ -484,22 +567,25 @@
                 </select>
               </div>
               <div class="form-group">
-                <label>Tell us about your shipment</label>
+                <label for="shipment_details"
+                  >Tell us about your shipment</label
+                >
                 <textarea
-                  placeholder="Dimensions, weight, origin, destination, timeline…"
+                  id="shipment_details"
                   name="shipment_details"
+                  placeholder="Dimensions, weight, origin, destination, timeline…"
                 ></textarea>
               </div>
               <button class="form-submit" type="submit">Send Request →</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-     WMS CTA
-     ============================================================ -->
+         WMS CTA
+         ============================================================ -->
     <div class="wms-cta">
       <h2>Manage Your Inventory Online</h2>
       <p>
@@ -509,36 +595,43 @@
       <a
         href="http://wms.furnitureproslogistics.com"
         target="_blank"
+        rel="noopener noreferrer"
         class="btn-primary"
         >Access WMS Portal →</a
       >
     </div>
 
     <!-- ============================================================
-     FOOTER
-     ============================================================ -->
+         FOOTER
+         ============================================================ -->
     <footer>
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="images/fpl_logo2.png" alt="FPL" />
+          <img
+            src="images/fpl_logo2.png"
+            alt="Furniture Pros Logistics Solution"
+          />
         </div>
         <div class="footer-links">
           <a href="#services">Services</a>
           <a href="#crating">Crating</a>
           <a href="#contact">Contact</a>
-          <a href="http://wms.furnitureproslogistics.com" target="_blank"
+          <a
+            href="http://wms.furnitureproslogistics.com"
+            target="_blank"
+            rel="noopener noreferrer"
             >WMS</a
           >
         </div>
         <div class="footer-copy">
-          © 2026 Furniture Pros Logistics Solution · Walnut, CA
+          &copy; 2026 Furniture Pros Logistics Solution &middot; Walnut, CA
         </div>
       </div>
     </footer>
 
     <!-- ============================================================
-     SCRIPTS
-     ============================================================ -->
+         SCRIPTS
+         ============================================================ -->
     <script src="js/new_main.js"></script>
   </body>
 </html>

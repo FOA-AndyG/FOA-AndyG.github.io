@@ -3,30 +3,54 @@
    Main JavaScript
    ============================================ */
 
-/* ── Mobile Menu Toggle ── */
-function toggleMenu() {
-  const menu = document.getElementById('mobile-menu');
-  menu.classList.toggle('open');
+
+/* ── Mobile Menu Toggle ─────────────────────
+   Called by the hamburger <button>.
+   Toggles the .open class on the menu and
+   keeps aria-expanded in sync for screen readers.
+   ─────────────────────────────────────────── */
+function toggleMenu(btn) {
+  const menu   = document.getElementById('mobile-menu');
+  const button = btn || document.getElementById('hamburger');
+  const isOpen = menu.classList.toggle('open');
+
+  // Keep aria-expanded in sync so screen readers announce the state
+  button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
-/* ── Contact Form Submission Feedback ── */
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target;
-  btn.textContent = '✓ Request Sent!';
-  btn.style.background = '#1d7a3e';
-  setTimeout(() => {
-    btn.textContent = 'Send Request →';
-    btn.style.background = '';
-  }, 3000);
-}
 
-/* ── Sticky Nav Border on Scroll ── */
-window.addEventListener('scroll', () => {
+/* ── Sticky Nav Border on Scroll ────────────
+   Subtly strengthens the nav bottom border
+   once the user scrolls past the hero.
+   ─────────────────────────────────────────── */
+(function () {
   const nav = document.getElementById('main-nav');
-  if (window.scrollY > 50) {
-    nav.style.borderBottomColor = 'rgba(255,255,255,0.12)';
-  } else {
-    nav.style.borderBottomColor = 'rgba(255,255,255,0.07)';
+  if (!nav) return;
+
+  window.addEventListener('scroll', function () {
+    const scrolled = window.scrollY > 50;
+    nav.style.borderBottomColor = scrolled
+      ? 'rgba(255, 255, 255, 0.18)'
+      : 'rgba(255, 255, 255, 0.07)';
+  }, { passive: true });
+})();
+
+
+/* ── Close Mobile Menu on Outside Click ─────
+   Tapping anywhere outside the nav closes
+   the mobile menu on small screens.
+   ─────────────────────────────────────────── */
+document.addEventListener('click', function (e) {
+  const nav    = document.getElementById('main-nav');
+  const menu   = document.getElementById('mobile-menu');
+  const button = document.getElementById('hamburger');
+
+  if (!nav || !menu || !button) return;
+  if (!menu.classList.contains('open')) return;
+
+  // If the click was outside the nav element, close the menu
+  if (!nav.contains(e.target)) {
+    menu.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
   }
 });
